@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Resume Screening</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🚀 Smart Resume Screening System</h1>
+
+    <form action="/analyze" method="post" enctype="multipart/form-data">
+        <label>Upload Resumes:</label>
+        <input type="file" name="resumes" multiple required>
+
+        <label>Job Description:</label>
+        <textarea name="job_desc" placeholder="Enter job description..."></textarea>
+
+        <button type="submit">Analyze Candidates</button>
+    </form>
+</div>
+
+</body>
+</html>
